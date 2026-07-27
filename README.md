@@ -71,14 +71,14 @@ python main.py
 
 Trains a new model if none is saved yet, then generates a 1000-character sample.
 
-**Run the full Iteration 4 pipeline** (baseline comparison, hyperparameter search,
+**Run the full pipeline** (baseline comparison, hyperparameter search,
 evaluation metrics, feature-importance ablations, and all plots):
 
 ```bash
 python run_iteration4.py
 ```
 
-Iteration counts at the top of `run_iteration4.py` are set low by default so the whole
+Iteration counts at the top of `main.py` are set low by default so the whole
 pipeline finishes in a few minutes on a laptop (CPU or Apple Silicon MPS). Increase
 `FINAL_ITERS` for better final numbers if you have more compute time available; the
 architecture and evaluation code stay the same either way.
@@ -125,7 +125,3 @@ Sample output after training:
   reasoning about words as units, which caps how coherent generated text can get at this scale.
 - No test set separate from validation; validation loss is used as the sole measure of
   generalization.
-
-## License
-
-Educational project for Introduction to Machine Learning.
