@@ -137,4 +137,8 @@ Sample output after training:
 - Character-level tokenization means the model spends capacity learning to spell rather than
   reasoning about words as units, which caps how coherent generated text can get at this scale.
 - No test set separate from validation; validation loss is used as the sole measure of
+<<<<<<< HEAD
   generalization.
+=======
+  generalization.
+>>>>>>> a8c5f2a82b0785012eac52c4de25547ab48cd452
